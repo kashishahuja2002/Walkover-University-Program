@@ -18,7 +18,6 @@ body {
 
 /************* Starting CSS  **************/
 a, a:visited {
-    /* color: var(--lightpurple); */
     color: #000;
     text-decoration: none;
 }
@@ -55,7 +54,7 @@ p {
 
 /************* Index  **************/
 
-/* Navbar */
+/* Navigation bar */
 .navbar{
     background: var(--bgpurple) !important;
     padding: 0%;
@@ -128,7 +127,7 @@ p {
     }
 }
 
-/* Image Carousel  */
+/* Image Carousel */
 .carousel-caption .btn {
     margin-left: 40%;
     margin-bottom: 7%;
@@ -139,7 +138,7 @@ p {
 {
     .carousel-caption {
         position: absolute;
-        bottom: -32%;
+        bottom: -30%;
     }
 
     .carousel-caption .btn {
@@ -159,6 +158,78 @@ p {
     background-color: var(--bgpurple);
 } 
 
+.carousel-indicators li {
+    display: none;
+}
 
+/* Infomation */
+.info {
+    margin-top: 30px;
+    background-color: var(--bgpurple);
+    color: var(--white);
+    padding: 50px 0px;
+}
 
-    
+/* Latest Posts */
+.latest-posts {
+    padding: 80px 0;
+}
+
+.latest-posts h3 {
+    padding-bottom: 40px;
+    color: var(--lightpurple);
+    font-size: 50px;
+}
+
+.latest-posts .col-sm-4 img{
+    width: 100%;
+	object-fit: cover;
+    box-shadow: 1px 1px 5px 1px grey;
+}
+
+.latest-posts figcaption {
+	height: 40px;
+	margin-top: -30px;
+	padding: 0.5em 0.5em 0 0.5em;
+	text-align: center;
+	color: var(--white);
+	background: black;
+	opacity: 0.8;
+}
+
+@media (max-width: 576px)
+{
+    .latest-posts .row {
+        margin-right: 0px;
+    }
+
+    .latest-posts h3 {
+        padding-bottom: 0px;
+        font-size: 35px;
+    }
+
+    .latest-posts .col-12 {
+        padding-right: 0px;
+    }
+
+    .latest-posts img {
+        padding: 30px;
+        box-shadow: none !important;
+    }
+}
+
+/* Vlogs */
+.vlogs {
+    padding: 80px 0;
+}
+
+.vlogs h3 {
+    padding-bottom: 40px;
+    color: var(--lightpurple);
+    font-size: 50px;
+}
+
+.vlogs video {
+    width: 100%;
+    height: 450px;
+}
