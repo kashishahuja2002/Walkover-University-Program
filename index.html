@@ -2,114 +2,200 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kashish Ahuja | Codeitmin | Home</title>
+    <title>Kashish Ahuja | Codeitmin | Home</title>     
 
-    <!-- CSS local file  -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Bootstrap stylesheet -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-</head>
-<body>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
 
-    <!-- Navigation bar  -->
-    <div id="navbar">
-        <div id="logo">
-            <img src="./assets/images/me.jpg" alt="logo">
-        </div>
-        <h1>Codeitmin</h1>
-        <h2>Home</h2>
-        <h2>Posts</h2>
-        <ul>
-            <li>Tech posts</li>
-            <ol>
-                <li>C/C++</li>
-                <li>Web development</li>
-                <li>Data structures & Algorithms</li>
-                <li>Database</li>
-                <li>UI/UX</li>
-            </ol>
-            <li>General posts</li>
-            <li>Vlogs</li>
-            <li>Reels</li>
-            <li>IGTV</li>
-        </ul>
-        <h2>About</h2>
-    </div>
-
-    <!-- <h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp-by Kashish Ahuja</h2> -->
-    <p>Hello everyone, I am Kashish Ahuja. The topic which I chose for HTML and CSS classwork submission is "Codeitmin".
-    <br> <br>
-    Codeitmin is my instagram coding account. You can check it on instagram by the username <a href="https://www.instagram.com/codeitmin/" target="_blank">@codeitmin.</a> This website will contain codes, blogs and details related to all the posts.
-    </p>
+    <!-- Local stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
     
 
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Codeitmin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars fa-lg"></i>
+                </span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown dmenu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Posts
+                        </a>
+                        <div class="dropdown-menu sm-menu">
+                            <a class="dropdown-item" href="#">Tech posts</a>
+                            <a class="dropdown-item" href="#">General posts</a>
+                            <a class="dropdown-item" href="#">Vlogs</a>
+                            <a class="dropdown-item" href="#">Reels</a>
+                            <a class="dropdown-item" href="#">IGTV</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Image carousel -->
+    <section class="slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+    
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="carousel-img">
+                                    <img class="w-100 after" src="assets/images/slider-1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-caption caption-1 text-left offset-3 offset-md-4 col-8">
+                                    <button class="btn btn-default btn-lg">
+                                        <a href="https://www.instagram.com/codeitmin/" target="_blank">
+                                            Visit insta
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="carousel-img">
+                                    <img class="w-100" src="assets/images/slider-2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-caption caption-2 text-left">
+                                    <button class="btn btn-default btn-lg">
+                                        <a href="https://www.instagram.com/codeitmin/" target="_blank">
+                                            Explore
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+    
+                        <!-- Controls -->
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+    
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information -->
+    <section class="container-fluid info">
+        <div class="container">
+            <h5>
+                Hello everyone, I am Kashish Ahuja. The topic which I chose for HTML and CSS classwork submission is "Codeitmin".
+                <br>
+                Codeitmin is my instagram coding account. You can check it on instagram by the username <a href="https://www.instagram.com/codeitmin/" target="_blank">@codeitmin</a>. This website contains codes, blogs and details related to all the posts from instagram code.
+            </h5>
+        </div>
+    </section>
+
     <!-- Posts -->
-    <figure>
-        <img src="./assets/images/meet the programmer.jpeg" alt="" height="300">
-        <figcaption>Meet the programmer</figcaption>
-        <p>This is Kashish Ahuja. I'm from India, a student of M.Tech (IT), also a chess player and an artist (painting). Finally I'm beginning my developer insta. I'm here to document and share my tech journey. I'm an absolute beginner starting from the basics. I'd post all my work here to creat a place where I can see all my progress and it will be something to look at and be proud of later. And hopefully learn a lot along the way. Wish me luck and let's do it. ✨
-            <br>
-            Follow me on: <br>
-            Instagram: <a href="https://www.instagram.com/kashish.ahuja_/" target="_blank">@kashish.ahuja_</a> <br>
-            LinkedIn: <a href="https://www.linkedin.com/mwlite/in/kashish-ahuja-1505" target="_blank">kashish-ahuja-1505</a> <br>
-            GitHub: <a href="https://github.com/kashishahuja2002" target="_blank">kashishahuja2002</a> 
-        </p>
-    </figure>
+    <section class="container">
 
-    <br> <br>
+        <!-- Lastest posts -->
+        <div class="latest-posts">
+            <h3 class="text-center">Latest posts</h3>
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <a href="#">
+                        <img src="./assets/images/pointers.png" alt="">
+                        <figcaption>Pointers</figcaption>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <a href="#">
+                        <img src="./assets/images/inheritance.png" alt="">
+                        <figcaption>Inheritance</figcaption>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <a href="#">
+                        <img src="./assets/images/star pattern questions.png" alt="">
+                        <figcaption>Star pattern questions</figcaption>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    <video src="./assets/images/to-do.mp4" play auto loop controls="true" height="300"></video>
-    <figcaption>To-do application using C++</figcaption>
-    <p>Hey everyone! ✨
-        I made this basic application to manage to-dos using c++ language.
-        Maintaining a to-do lists makes you productive, you'll be able to visualise how long tasks were taking, track your weekly and monthly progress and it will give you more time, even for little pleasures.
-        <br>
-        You can get the code for application on the GitHub link given below.
-        <br> Link:- <a href="bit.ly/codeitmin_todo" target="_blank">to-do application</a> 
-    </p>
+        <!-- Vlogs -->
+        <div class="vlogs">
+            <h3 class="text-center">Vlogs</h3>
+            <div class="row">
+                <div class="col-12">
+                    <a href="#">
+                        <video src="./assets/images/to-do.mp4" autoplay loop controls></video>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    <br> <br>
+    </section>
 
-    <figure>
-        <img src="./assets/images/star pattern questions.png" alt="" height="300">
-        <figcaption>Star pattern questions</figcaption>
-        <p>Star pattern programs are one of most famous and frequently asked coding questions.
-            Pattern questions have been asked in interviews and coding rounds of many MNCs such as ZOHO, Amazon, Voonik, Infosys, Google, IVTL Infoview.
-            One come across pattern questions with a probability of 1:5, that is 20%.
-            These type of question are best for practicing flow control statements and to enhance logical thinking capabilities.
-            You can find some of the top star pattern programs in the GitHub repository shared below.
-            <br>
-            Link:- <a href="bit.ly/codeitmin_star_patterns" target="_blank">Star pattern questions</a> </p>
-    </figure>
+        <hr> <hr> <br> <br>
+    
+        <form action="">
+            <label for="">Name</label>
+            <input type="text" placeholder="First last" class="Name"> <br> <br>
+            <label for="">Email</label>
+            <input type="email" placeholder="example@mail.com"> <br> <br>
+            <label for="">Message</label>
+            <input type="textarea" placeholder="Feedback"> <br> <br>
+            <input type="submit" name="submit" value="sumbit">
+        </form>
+    </div>
 
-    <br> <br>
+    <!-- Javascript files  -->
 
-    <figure>
-        <img src="./assets/images/pointers.png" alt="" height="300">
-        <figcaption>Pointers</figcaption>
-        <p>
-            Pointers can be hard to understand at the beginning. But they are a powerful feature of C/C++.
-            Do you struggle with pointers? Well, everyone does at the beginning.
-            So here's a quick guide to what are pointers, why are they used, and different types of pointers.
-            You can learn about pointers in detail from the pdf in the link shared below.
-            <br> Link:- <a href="bit.ly/codeitmin_pointers">Pointers</a> 
-        </p>
-    </figure>
-
-    <hr> <hr> <br> <br>
-
-    <form action="">
-        <label for="">Name</label>
-        <input type="text" placeholder="First last" class="Name"> <br> <br>
-        <label for="">Email</label>
-        <input type="email" placeholder="example@mail.com"> <br> <br>
-        <label for="">Message</label>
-        <input type="textarea" placeholder="Feedback"> <br> <br>
-        <input type="submit" name="submit" value="sumbit">
-    </form>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
