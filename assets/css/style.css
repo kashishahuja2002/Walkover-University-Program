@@ -52,7 +52,7 @@ p {
     padding-bottom: 6px !important;
 }
 
-/************* Index  **************/
+/************* Index  *************/
 
 /* Navigation bar */
 .navbar {
@@ -337,4 +337,39 @@ p {
 /* Footer */
 .footer {
     padding-top: 5px;
+}
+
+/************* About *************/
+.about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about a {
+    color: var(--lightpurple);
+}
+
+.about img {
+    width: 100%;
+}
+
+.about .about-text {
+    padding-left: 60px;
+}
+
+.about .about-text h3 {
+    color: var(--lightpurple);
+    border-bottom: 1px solid black;
+}
+
+.about .about-codeitmin {
+    padding-top: 50px;
+}
+
+@media (max-width: 992px)
+{
+    .about .about-text {
+        padding: 0px 25px;
+        padding-top: 30px;
+    }
 }
