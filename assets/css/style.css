@@ -56,6 +56,10 @@ p {
     box-shadow: none;
 }
 
+.heading {
+    color: var(--lightpurple);
+}
+
 /************* Index  *************/
 
 /* Navigation bar */
@@ -194,9 +198,11 @@ p {
 }
 
 .latest-posts h3 {
-    padding-bottom: 40px;
-    color: var(--lightpurple);
     font-size: 50px;
+}
+
+.latest-posts .col-sm-4 {
+    padding-top: 50px;
 }
 
 .latest-posts .col-sm-4 img{
@@ -231,7 +237,7 @@ p {
     }
 
     .latest-posts img {
-        padding: 30px;
+        padding: 0px 30px;
         box-shadow: none !important;
     }
 
@@ -248,7 +254,6 @@ p {
 
 .vlogs h3 {
     padding-bottom: 40px;
-    color: var(--lightpurple);
     font-size: 50px;
 }
 
@@ -364,7 +369,6 @@ p {
 }
 
 .about .about-text h3 {
-    color: var(--lightpurple);
     border-bottom: 1px solid black;
 }
 
@@ -389,7 +393,6 @@ p {
 /* Left Panel */
 .contact a {
     color: var(--lightpurple);
-    -top: 150px;
 }
 
 .contact .account {
@@ -409,7 +412,6 @@ p {
 }
 
 .contact h2 {
-    color: var(--lightpurple);
     border-bottom: 1px solid black;
 }
 
