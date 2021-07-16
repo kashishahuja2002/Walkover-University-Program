@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codeitmin | About</title>     
+    <title>Codeitmin | Contact</title>     
 
     <!-- Bootstrap stylesheet -->
     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
@@ -68,36 +68,62 @@
     </nav>
 
     <!-- Main section -->
-    <section class="container about">
+    <section class="container contact">
         <div class="row">
 
-            <!-- Left panel -->
-            <div class="col-12 col-lg-6">
-                <img src="./assets/images/meet the programmer.jpeg" alt="">
+            <!-- Left Panel -->
+            <div class="col-12 col-md-6 account">
+                <h2 class="text-center">Contact Me</h2>
+                <br> <br>
+                <div class="links">
+                    <h5> You can follow me on: </h5>
+                    <p> <i class="fab fa-instagram fa-lg"></i> Instagram (personal): <a href="https://www.instagram.com/kashish.ahuja_/" target="_blank">@kashish.ahuja_</a> </p>
+                    <p> <i class="fab fa-instagram fa-lg"></i> Instagram (coding): <a href="https://www.instagram.com/codeitmin/" target="_blank">@codeitmin</a> </p>
+                    <p> <i class="fab fa-linkedin-in fa-lg"></i> LinkedIn: <a href="https://www.linkedin.com/mwlite/in/kashish-ahuja-1505" target="_blank">kashish-ahuja-1505</a> </p>
+                    <p> <i class="fab fa-github fa-lg"></i> GitHub: <a href="https://github.com/kashishahuja2002" target="_blank">kashishahuja2002</a> </p>
+                    <br> <br>
+                    <h5>Directly contact me via: </h5>
+                    <p> <i class="fas fa-envelope fa-lg"></i> Mail: <a href="mailto:kashishahuja2002@gmail.com">kashishahuja2002@gmail.com</a> </p>
+                </div>
             </div>
 
             <!-- Right Panel -->
-            <div class="col-12 col-lg-6 about-text">
-                <div>
-                    <h3 class="text-center">About Me</h3>
-                    <p>
-                        Hey! <br>
-                        This is Kashish Ahuja. I'm from India, a student of M.Tech (IT), also a chess player and an artist (painting). Finally I'm beginning my developer insta. I'm here to document and share my tech journey. I'm an absolute beginner starting from the basics. I'd post all my work here to creat a place where I can see all my progress and it will be something to look at and be proud of later. And hopefully learn a lot along the way.
-                        <br>
-                        Wish me luck and let's do it. ✨
-                    </p>
-                </div>
+            <div class="col-12 col-md-6 contact-form">
+                <form action="">
 
-                <div class="about-codeitmin">
-                    <h3 class="text-center">About Codeitmin</h3>
-                    <p>
-                        Codeitmin is my instagram coding account. I post all my work and projects on the account. I also make tech content for the topics which I find comapratively important or difficult, to explain it in a easy and visual way. 
-                        <br>
-                        You can check it on instagram by the username <a href="https://www.instagram.com/codeitmin/" target="_blank">@codeitmin</a>. 
-                        <br> 
-                        This website contains codes, content and details related to all the posts from instagram code. Hope you get some cool project ideas and have a fun learning with Codeitmin. ✨ 
-                    </p>
-                </div>
+                    <label for="user-name">
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Name</legend>
+                            <input type="text" id="user-name" name="name">
+                        </fieldset>
+                    </label>
+
+                    <label for="user-email">
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Email</legend>
+                            <input type="text" id="user-email">
+                        </fieldset>
+                    </label>
+
+                    <label for="user-num">
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Mobile No.</legend>
+                            <input type="text" id="user-num">
+                        </fieldset>
+                    </label>
+
+                    <label for="user-msg">
+                        <fieldset class="scheduler-border">
+                            <legend class="scheduler-border">Message</legend>
+                            <textarea name="user-msg" id="user-msg" rows="3"></textarea>
+                        </fieldset>
+                    </label>
+
+                    <div class="col-12 text-right">
+                        <button type="submit" class="btn btn-default btn-red m-0">Submit</button>
+                    </div>
+                    
+                </form>
             </div>
 
         </div>

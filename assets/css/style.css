@@ -32,7 +32,7 @@ p {
 
 .btn.btn-default {
     background-color: var(--bgpurple);
-    color: white;
+    color: black;
 }
 
 .btn-link {
@@ -50,6 +50,10 @@ p {
     font-weight: 400 !important;
     border-bottom: none;
     padding-bottom: 6px !important;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
 }
 
 /************* Index  *************/
@@ -345,12 +349,14 @@ p {
     margin-bottom: 50px;
 }
 
-.about a {
-    color: var(--lightpurple);
-}
-
+/* Left Panel */
 .about img {
     width: 100%;
+}
+
+/* Right Panel */
+.about a {
+    color: var(--lightpurple);
 }
 
 .about .about-text {
@@ -372,4 +378,108 @@ p {
         padding: 0px 25px;
         padding-top: 30px;
     }
+}
+
+/************* Contact *************/
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Left Panel */
+.contact a {
+    color: var(--lightpurple);
+    -top: 150px;
+}
+
+.contact .account {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid black;
+}
+
+.contact .account .links {
+    padding-left: 20px;
+}
+
+.contact .account .links i{
+    color: var(--bgpurple);
+    padding: 10px;
+}
+
+.contact h2 {
+    color: var(--lightpurple);
+    border-bottom: 1px solid black;
+}
+
+.contact h5 {
+    padding: 0px;
+}
+
+.contact p {
+    margin-top: 7px;
+}
+
+@media (max-width: 768px) 
+{
+    .contact .account .links {
+        padding-left: 10px;
+    }
+
+    .contact .account .links i{
+        padding: 5px;
+    }
+
+    .contact .account {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+}
+
+/* Right Panel  */
+.contact-form {
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #0000004d ;
+    border-radius: 5px;
+    padding: 0 1.4em 0 1.4em !important;
+    margin: 0 0 .5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border{
+    font-size: 1.2em !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+    color: rgb(173, 173, 173);
+    margin-bottom: 0;
+}
+
+.contact .contact-form label{
+    width: 100%;
+}
+
+.contact .contact-form input {
+    border: none;
+    padding-bottom: 5px;
+}
+
+.contact .contact-form input:focus-visible, .contact .contact-form textarea:focus-visible {
+    outline: none;
+}
+
+.contact .contact-form textarea {
+    border: none;
+}
+
+.contact .contact-form textarea:focus {
+    box-shadow: none;
 }
