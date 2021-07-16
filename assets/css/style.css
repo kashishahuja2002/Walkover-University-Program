@@ -468,6 +468,7 @@ legend.scheduler-border{
 }
 
 .contact .contact-form input {
+    width: 100%;
     border: none;
     padding-bottom: 5px;
 }
@@ -477,6 +478,7 @@ legend.scheduler-border{
 }
 
 .contact .contact-form textarea {
+    width: 100%;
     border: none;
 }
 
