@@ -15,8 +15,8 @@ body {
 } */
 
 :root {
-    --bgpurple:#D089FF;
-    /* --bgpurple: #CB87F5; */
+    /* --bgpurple:#D089FF; */
+    --bgpurple: #CB87F5;
     --lightpurple:#A92FFC;
     --white: #ffffff;
 }
