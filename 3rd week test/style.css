@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --orange:#FE904C;
+    --teal:#57D5DA;
+    --white: #ffffff;
+    --green: green;
+    
+}
+
+/************* Index *************/
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+.white {
+    background-color: var(--white);
+    height: 1200px;
+    box-sizing: border-box;
+}
+
+/* Box 1 */
+.box1 .orange {
+    background-color: var(--orange);
+    width: 100%;
+    height: 100%;
+}
+
+.box1 .teal {
+    box-sizing: border-box;
+    background-color: var(--teal);
+    width: calc(50% - 2em);
+    height: 97%;
+    margin: 1em;
+    display: flex;
+    float: left;
+}
+
+@media (max-width:768px) {
+    .box1 .teal {
+        width: calc(100% - 2em);
+        height: 47%;
+    }
+}
+
+/* Box 2 */
+.box2 .orange {
+    background-color: var(--orange);
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+.box2 .teal {
+    box-sizing: border-box;
+    background-color: var(--teal);
+    width: 94%;
+    margin: auto;
+    height: 573px;
+    padding: 2em;
+    overflow-y: auto;
+}
+
+@media (max-width:768px)
+{
+    .box2 .orange {
+        padding: 1.5em;
+    }
+}
+
+/* Box 3 */
+.box3 .orange {
+    background-color: var(--orange);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box3 .teal {
+    background-color: var(--teal);
+    width: 40%;
+    height: 46.5%;
+}
+
+.box3 .teal.t1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box3 .teal.t2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box3 .teal.t3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box3 .teal.t4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width:768px) {
+    .box3 .teal {
+        height: 47.5%;
+    }
+}
+
+/* Go to top */
+.green {
+    background-color: var(--green);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.green a{
+    padding: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.green a:hover {
+    text-decoration: none !important;
+}
