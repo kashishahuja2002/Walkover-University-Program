@@ -29,13 +29,11 @@
 
     <div class="container onlineTest">
         <div class="row bgWhite">
-
             <div class="col-12 col-md-7 leftPanel">
                 <img src="./assets/images/online test.jpg" alt="online test image" class="onlineTestImage">
                 <h1 class="text-center p-3">Online Assesment Platform</h1>
                 <h5 class="text-center p-2">Developed with &#10084; by Kashish Ahuja, M Boopathi, and Drashi Jain</h5>
             </div>
-
             <div class="col-12 col-md-5 rightPanel">
                 <div class="center">
                     <form action="instructions.html" id="login">
@@ -54,12 +52,11 @@
                         </label>
 
                         <div class="col-12 text-right">
-                            <button type="submit" class="btn btn-default m-0"> Proceed </button>
+                            <button type="submit" class="btn btn-default m-0" onclick="verify()"> Proceed </button>
                         </div>
                     </form>
                 </div>
             </div>
-            
         </div>
     </div>
 
@@ -70,6 +67,30 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script>
+        var ajaxreq;
+        function verify(){
+           var x=$("#user-name").val();
+    var y=$("#user-email").val();
+    var xhr=$.post("Login?name="+x+"&emailid="+y,processResponse);
+    xhr.error(handleError);
+}        
+function processResponse(responseText,textStatus,xhr){
+    if(textStatus == 'success') {
+        var check=responseText.trim();
+        if(check==="incorrect")
+        {
+            
+        }
+        else
+        {
+            bool=true;
+            location.href = "instructions_jsp.jsp";
+        }
+       
+    }
+}
+    </script> 
 </body>
 </html>
